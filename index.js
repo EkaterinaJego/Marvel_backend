@@ -7,6 +7,8 @@ const axios = require("axios");
 const comicsRoutes = require("./routes/comics");
 const charactersRoutes = require("./routes/characters");
 
+app.use(cors());
+
 app.use(comicsRoutes);
 app.use(charactersRoutes);
 
