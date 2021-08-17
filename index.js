@@ -20,6 +20,6 @@ app.all("*", (req, res) => {
   res.json({ message: "Page not found" });
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Server has started");
 });
