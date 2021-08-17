@@ -13,7 +13,7 @@ app.use(comicsRoutes);
 app.use(charactersRoutes);
 
 app.get("/", (req, res) => {
-  res.json({ message: "Hi" });
+  res.json({ message: "Welcome to the Marvel backend page" });
 });
 
 app.all("*", (req, res) => {
