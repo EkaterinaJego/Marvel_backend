@@ -3,10 +3,7 @@ const router = express.Router();
 const axios = require("axios");
 require("dotenv").config();
 
-// FICHE TECHNIQUE
-// Sur la page principale « personnages », vous devrez faire apparaître la liste des personnages MARVEL, par ordre alphabétique (100 par page), sous forme de fiche (photo, nom, description). En cliquant sur chaque fiche, il devra être possible d’accéder à une page regroupant les comics liés au personnage.
-
-// 1ère route pour lister tous les personnages &limit=${limit}&skip=${skip}&name=${name}
+// 1ère route pour lister tous les personnages
 
 router.get("/characters", async (req, res) => {
   try {
